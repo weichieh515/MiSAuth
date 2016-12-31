@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Setting
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list inset>
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input [(ngModel)]="userData.username" (blur)="storeUserData()" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input [(ngModel)]="userData.password" (blur)="storeUserData()" type="password"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="storeUserData()">Confirm</button>
+  </ion-list>
+</ion-content>
